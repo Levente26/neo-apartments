@@ -11,7 +11,7 @@ export const useApiCall = () => {
         setIsPending(true)
         setError(null)
         try {
-            const response = await axios.get('https://retoolapi.dev/FGNzyg/neoapartments')
+            const response = await axios.get('https://retoolapi.dev/2aBwyp/neoapartments')
             setData(response.data)
             setIsPending(false)
         } catch (err) {
