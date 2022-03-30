@@ -29,7 +29,7 @@ const House = ( { data } ) => {
                     </section>
                     <section className="text-center mt-4 p-2">
                         <p className="mb-2 font-bold text-lg">Price</p>
-                        <p className="text-green-800 font-bold text-xl">$ {data.price}</p>
+                        <p className="text-green-800 font-bold text-xl">$ {data.price} / night</p>
                     </section>
                     <section className="text-center mt-6 p-2 col-span-3">
                         <p className="mb-2 font-bold text-lg">Rating</p>
