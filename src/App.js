@@ -11,7 +11,7 @@ import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
-    <div className='bg-green-200'>
+    <div className='bg-green-200 font-opensans'>
       <BrowserRouter>
         <header>
           <Navbar />
