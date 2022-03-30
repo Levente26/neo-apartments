@@ -2,7 +2,7 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // pages
 import Apartments from './pages/apartments/Apartments';
-import SingleApartment from './pages/apartments/single-apartment/SingleApartment';
+import Details from './pages/apartments/single-apartment/Details';
 import Signup from './pages/signup/Signup';
 import Login from './pages/login/Login';
 // components
@@ -19,7 +19,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path='/' element={<Apartments />} />
-            <Route path='/' element={<SingleApartment />} />
+            <Route path='/apartment/:id' element={<Details />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
           </Routes>
