@@ -13,7 +13,9 @@ export const useSelectedApartment = () => {
         try {
             const response = await axios.get(`https://retoolapi.dev/2aBwyp/neoapartments/${id.id}`)
             setData(response.data)
-            setIsPending(false)
+            setTimeout(() => {
+                setIsPending(false)
+            }, 1000)
         } catch (err) {
             console.log(err.message)
             setError('Something went wrong')
