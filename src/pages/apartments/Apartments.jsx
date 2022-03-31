@@ -18,7 +18,7 @@ const Apartments = () => {
                     <Loading />
                 </div>
             : 
-                data && data.map(apartment => <SingleApartment apartment={apartment} />)
+                data && data.map(apartment => <SingleApartment key={apartment.id} apartment={apartment} />)
             }
         </div>
     )
