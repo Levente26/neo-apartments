@@ -14,7 +14,7 @@ const House = ( { data } ) => {
             {data && (
                 <div className="flex justify-between align-middle">
                     <img className="w-1/4" src={data.picture} alt='pic' />
-                    <h1 className="mr-auto ml-auto mt-auto mb-auto text-2xl font-bold text-gray-700">{data.location}</h1>
+                    <h1 className="m-auto text-2xl font-bold text-gray-700">{data.location}</h1>
                 </div>
             )}
             {data && (
