@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className='bg-green-200 font-opensans'>
       <BrowserRouter>
-        <header>
+        <header className='sticky top-0'>
           <Navbar />
         </header>
         <main>
@@ -24,7 +24,7 @@ const App = () => {
             <Route path='/login' element={<Login />} />
           </Routes>
         </main>
-        <footer>
+        <footer className='sticky bottom-0'>
           <Footer />
         </footer>
       </BrowserRouter>
