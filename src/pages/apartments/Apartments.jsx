@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useApiCall } from "../../hooks/useApiCall"
 import Loading from "../loading/Loading"
+import Filter from "./filter/Filter"
 import SingleApartment from "./single-apartment/SingleApartment"
 
 const Apartments = () => {
@@ -12,14 +13,17 @@ const Apartments = () => {
     }, [])
 
     return (
-        <div className="h-full w-full grid grid-cols-3">
-            {isPending ? 
-                <div className="col-span-3 align-middle">
-                    <Loading />
-                </div>
-            : 
-                data && data.map(apartment => <SingleApartment key={apartment.id} apartment={apartment} />)
-            }
+        <div className="h-full w-full ">
+            <Filter />
+            <div className="grid grid-cols-3 grid-rows-2">
+                {isPending ? 
+                    <div className="col-span-3 align-middle">
+                        <Loading />
+                    </div>
+                : 
+                    data && data.map(apartment => <SingleApartment key={apartment.id} apartment={apartment} />)
+                }
+            </div>
         </div>
     )
 }
