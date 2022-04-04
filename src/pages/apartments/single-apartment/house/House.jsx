@@ -1,5 +1,3 @@
-
-
 const House = ( { data } ) => {
 
     const getDate = (date) => {
