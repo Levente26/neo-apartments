@@ -15,7 +15,7 @@ const Apartments = () => {
     return (
         <div className="h-full w-full ">
             <Filter />
-            <div className="grid grid-cols-3 grid-rows-2">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-rows-2">
                 {isPending ? 
                     <div className="col-span-3 align-middle">
                         <Loading />

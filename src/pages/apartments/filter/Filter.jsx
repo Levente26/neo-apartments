@@ -3,7 +3,7 @@
 const Filter = () => {
     return (
         <div>
-            hi filteeer
+            hi filter
         </div>
     )
 }

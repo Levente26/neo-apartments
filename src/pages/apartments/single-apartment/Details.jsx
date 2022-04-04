@@ -17,17 +17,17 @@ const Details = () => {
     }, [])
 
     return (
-        <div className="grid grid-cols-3 gap-8 h-screen">
+        <div className="lg:grid lg:grid-cols-3 gap-8 h-screen">
             {isPending ? 
                 <div className="col-span-3 align-middle">
                     <Loading />
                 </div>
             :
                 <>
-                    <section className="col-span-2 mt-8 mb-8 ml-4">
+                    <section className="col-span-2 mt-8 m-2">
                         <House data={data} />
                     </section>
-                    <section className="mt-8 mb-8 mr-4">
+                    <section className="mt-8 mb-8 m-2">
                         <Provider data={data} />
                     </section>
                 </>
