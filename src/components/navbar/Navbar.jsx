@@ -25,24 +25,25 @@ const Navbar = () => {
                         </Link>
                     </>
                 }
-                {user && <>
-                    {!isPending && 
-                        <button 
-                        className="btn bg-green-500 hover:bg-green-700 hover:text-white ease-in-out duration-300"
-                        onClick={handleClick}
-                        >
-                            Log Out
-                        </button>
-                    }
-                    {isPending && 
-                        <button 
-                        className="btn bg-green-500 hover:bg-green-700 hover:text-white ease-in-out duration-300"
-                        onClick={logout}
-                        >
-                            Loggin out...
-                        </button>
-                    }
-                </>
+                {user && 
+                    <>
+                        {!isPending && 
+                            <button 
+                            className="btn bg-green-500 hover:bg-green-700 hover:text-white ease-in-out duration-300"
+                            onClick={handleClick}
+                            >
+                                Log Out
+                            </button>
+                        }
+                        {isPending && 
+                            <button 
+                            className="btn bg-green-500 hover:bg-green-700 hover:text-white ease-in-out duration-300"
+                            onClick={logout}
+                            >
+                                Loggin out...
+                            </button>
+                        }
+                    </>
                 }
             </div>
         </div>
