@@ -5,12 +5,12 @@ const Signup = () => {
 
     const [email, setEmail] = useState(null)
     const [password, setPassword] = useState(null)
-    const [name, setName] = useState(null)
+    const [displayName, setDisplayName] = useState(null)
     const { signup, error, isPending } = useSignup()
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        signup(email, password, name)
+        signup(email, password, displayName)
     }
 
     return (
@@ -39,8 +39,8 @@ const Signup = () => {
                 <span className="text-center font-bold text-gray-700 text-xl">Enter your name</span>
                 <input 
                     type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={displayName}
+                    onChange={(e) => setDisplayName(e.target.value)}
                     className="ml-auto mr-auto shadow appearance-none border rounded w-96 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     required
                 />
