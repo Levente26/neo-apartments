@@ -12,7 +12,7 @@ const Navbar = () => {
         sessionStorage.removeItem("name")
     }
     return (
-        <div className="w-full bg-gray-100 flex justify-between items-center p-4 z-50">
+        <div className="w-full bg-gray-100 flex justify-between items-center p-4">
             <h1 className="lg:text-3xl font-bold lg:w-2/3 text-green-700">Neo Apartments</h1>
             <div className="lg:w-1/3 flex justify-around">
                 {!user && 

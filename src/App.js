@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className='bg-green-200 font-opensans'>
       <BrowserRouter>
-        <header className='sticky top-0'>
+        <header className='sticky top-0 z-50'>
           <Navbar />
         </header>
         <main>
