@@ -14,14 +14,14 @@ const Signup = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="h-screen flex flex-col w-1/2 ml-auto mr-auto p-4 mt-4 gap-5">
+        <form onSubmit={handleSubmit} className="h-screen flex flex-col w-full ml-auto mr-auto p-4 mt-4 gap-5">
             <label className="flex flex-col gap-5">
                 <span className="text-center font-bold text-gray-700 text-xl">Enter your email address</span>
                 <input 
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="ml-auto mr-auto shadow appearance-none border rounded w-96 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="ml-auto mr-auto shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     required
                 />
             </label>
@@ -31,7 +31,7 @@ const Signup = () => {
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="ml-auto mr-auto shadow appearance-none border rounded w-96 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="ml-auto mr-auto shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     required
                 />
             </label>
@@ -41,7 +41,7 @@ const Signup = () => {
                     type="text"
                     value={displayName}
                     onChange={(e) => setDisplayName(e.target.value)}
-                    className="ml-auto mr-auto shadow appearance-none border rounded w-96 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="ml-auto mr-auto shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     required
                 />
             </label>
